@@ -14,3 +14,20 @@ const tutorials = [
 const titleCased = () => {
   return tutorials
 }
+
+//for each string in the tutorials array
+//split the String into an array of words
+//for each word in string, titlecase (titleizeWord(word))
+
+const upcasedString = arr.map(function(word) {
+	titleizeWord(word)
+  upcasedString.join( ' ')
+})
+
+//method to titlecase a word
+function titleizeWord(word) {
+  let adjustedWord = word.charAt(0).toUpperCase() + word.slice(1)
+  return adjustedWord
+}
+
+//for each tutorial array, titleizeWord(word) and returns new array from that
