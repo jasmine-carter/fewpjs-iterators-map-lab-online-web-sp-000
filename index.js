@@ -15,14 +15,15 @@ const titleCased = () => {
   return tutorials.map(function(tutorial) {
     //split the tutorial
     tutorial = tutorial.split(' ');
-    for (let i = 0; i < tutorial.length; i++) {
-      tutorial[0] = tutorial[i].charAt(0).toUpperCase() + tutorial.slice(1);
+    for (let word of tutorial) {
+      word = word.charAt(0).toUpperCase() + word.slice(1)
+      console.log(word)
     }
     return tutorial.join(' ');
   });
 }
 
-for (const word of tutorial) {
+for (let word of tutorial) {
   word = word.charAt(0).toUpperCase() + word.slice(1)
   console.log(word)
 }
