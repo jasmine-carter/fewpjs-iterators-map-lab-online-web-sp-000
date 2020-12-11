@@ -17,7 +17,6 @@ const titleCased = () => {
     tutorial = tutorial.split(' ');
     for (let word of tutorial) {
       word = word.charAt(0).toUpperCase() + word.slice(1)
-      console.log(word)
     }
     return tutorial.join(' ');
   });
