@@ -16,12 +16,16 @@ const titleCased = () => {
     //split the tutorial
     tutorial = tutorial.split(' ');
     for (let i = 0; i < tutorial.length; i++) {
-      tutorial = tutorial[i].charAt(0).toUpperCase() + tutorial.slice(1);
+      tutorial[0] = tutorial[i].charAt(0).toUpperCase() + tutorial.slice(1);
     }
     return tutorial.join(' ');
   });
 }
 
+for (const word of tutorial) {
+  word = word.charAt(0).toUpperCase() + word.slice(1)
+  console.log(word)
+}
 
 //split the String into an array of words
 //let arrayedTutorials = tutorials.map(function(tutorial)
