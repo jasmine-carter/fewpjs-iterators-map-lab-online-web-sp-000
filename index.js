@@ -23,11 +23,6 @@ const titleCased = () => {
   });
 }
 
-for (let word of tutorial) {
-  word = word.charAt(0).toUpperCase() + word.slice(1)
-  console.log(word)
-}
-
 //split the String into an array of words
 //let arrayedTutorials = tutorials.map(function(tutorial)
   //{
